@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 475px;
+  max-width: 675px;
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
@@ -69,7 +69,7 @@ body {
   margin: 0 auto;
 }
 
-.intro > .title {
+.title {
   margin: 2rem auto;
   line-height: 1.5;
 }
@@ -117,6 +117,15 @@ input {
   color: hsl(240, 75%, 98%);
 }
 
+.main--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .main-bg {
   width: 100%;
   display: flex;
@@ -155,7 +164,7 @@ input {
 }
 
 .main--description {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: hsl(238, 22%, 44%);
   text-align: left;
 }
@@ -170,7 +179,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -303,10 +311,14 @@ input {
 
 .footer--contact li {
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 
-.footer--contact li:hover {
+.footer--contact > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer--contact > li > a:hover {
   color: hsl(170, 45%, 43%);
   transition: all 0.3s ease-in-out;
 }
@@ -322,6 +334,7 @@ input {
 
 .footer--menu {
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .menu--footer li {
@@ -349,8 +362,12 @@ input {
   margin: 0 auto;
 }
 
-.socials i {
-  font-size: 1rem;
+.socials > ul > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border: 1px solid #fff;
   padding: 10px;
   border-radius: 5000rem;
@@ -540,20 +557,21 @@ input {
   }
 
   .footer--logo {
+    width: 100%;
     padding: 3rem;
   }
 
   .footer--col {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 3rem 3rem;
   }
 
   .footer--contact {
-    width: 100%;
+    width: 60%;
   }
 
   .footer--menu {
@@ -565,8 +583,16 @@ input {
   }
 
   .menu--footer {
-    margin-right: 5rem;
+    margin-right: 3rem;
+    font-size: 0.9rem;
+  }
+
+  .menu--footer > li {
     white-space: nowrap;
+  }
+
+  .socials {
+    width: 60%;
   }
 
   .socials > ul {
